@@ -1,6 +1,5 @@
 package visao;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Scanner;
@@ -50,12 +49,12 @@ public class TabuleiroConsole {
 					 if("1".equals(digitado)) {
 						 tabuleiro.abrir(xy.next(), xy.next());
 					 } else if("2".equals(digitado)) {
-						 tabuleiro.alterarMarcacao(xy.next(), xy.next());
+						 tabuleiro.alternarMarcacao(xy.next(), xy.next());
 					 }
  				}
-				System.out.println("VocÃª ganhou!");
+				System.out.println("Você ganhou!");
 			}catch(ExplosaoException e) {
-				System.out.println("VocÃª perdeu!");
+				System.out.println("Você perdeu!");
 			}
 	}
 	

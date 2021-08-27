@@ -124,5 +124,8 @@ public class Campo {
 			return "?";
 		}
 	}
+	public void setAberto(boolean aberto) {
+		this.aberto = aberto;
+	}
 	
 }
